@@ -1,0 +1,195 @@
+/* font link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/*--------- Common style ------ */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{margin-top: 63px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F7F0FF;
+}
+main{max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    margin-bottom: 70px;
+}
+/* Heading Style Section  */
+.header-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    padding-left: 30px; 
+    margin-bottom: 100px;
+}
+.header-leftside h1{
+    font-size: 43px;
+}
+.header-leftside button{
+     margin-top: 23px;
+    border: none;
+    background-color: rgb(247, 39, 108);
+    padding: 12px;
+    width: 180px;
+    border-radius:30px;
+    color: white;
+    font-weight: 700;
+}
+.header-rightside img{
+    width: 85%;
+}
+.header-rightside img:hover{
+    transform: rotate(360deg);
+    transition: transform 2s;
+}
+/******************************
+ E-commerce logo style section  
+ *******************************/
+.logos{
+    width: 100%;
+}
+ .logo{
+     display: flex;
+    justify-content: space-around;
+    margin: 18px 0;
+}
+.logos img:hover{
+    transform: scale(1.7);
+    transition: transform 1s ease;
+}
+/*****************************\
+   products style section
+\*****************************/
+.section-title{
+    text-align: center;
+    margin: 30px 0;
+}
+ .products{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-row-gap: 36px;
+     grid-column-gap: 34px;
+     
+ }
+.product-banner img{
+    width: 256px;
+     
+}
+.product{
+    width: 258px;
+    box-shadow: 10px 10px 10px 10px rgba(128, 128, 128, 0.212);
+    padding: 15px;
+    border-radius: 12px;
+}
+.product:hover{
+    transform: scale(1.1);
+    transition: transform 1s;
+}
+.product-name{
+    font-size: 22px;
+}
+.price{
+    font-size: 20px;
+}
+.fa-star{
+    font-size: 11px;
+    color: gold
+}
+.fa-star-half{
+
+    font-size: 11px;
+    color: gold;
+}
+.rating-point{
+    font-size: 14px;
+}
+.product p{
+    color: gray;
+    font-size: 15px;
+}
+.explore-more-item{
+    padding-top: 23px;
+     color: rgb(182, 5, 182);
+     float: right;
+}
+/*--------------------------- 
+ Extra - section style sheet
+ ----------------------------*/
+.extra-section{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    margin-bottom: 33px;
+}
+.extra-nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+.extra-nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+.middle{
+    font-size: 23px;
+}
+.heading-banner{
+    display: flex;
+}
+.left-banner img{
+     width: 95%;
+}
+.right-banner img{
+    
+    width:95%;  
+}
+.title{
+    text-align: center;
+    margin: 15px 0px;
+}
+/* Footer style section  */
+.page-end{
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    background-color:#0A0826;
+}
+.social-icon{
+    font-size: 23px;
+}
+/* -----media query Section----- */
+ @media only screen and  (max-width:688px){
+     main{
+         width: 100%;
+     }
+     .header-section, .products, .extra-section{
+         grid-template-columns: repeat(1, 1fr);
+     }
+     .header-section, .product{
+         flex-direction: column;
+     }
+  .header-rightside{
+      margin-top: 50px;
+  }
+ }
+ @media only screen and (min-width:688px) and (max-width:992px)
+ {
+     main{
+         width: 100%;
+     }
+     .header-section, .products{
+         grid-template-columns: repeat(2, 1fr);
+       
+     }
+  .header-rightside{
+      margin-top: 50px;
+  }
+ }
